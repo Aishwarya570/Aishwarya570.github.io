@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  
+  <link rel="stylesheet" href="styles.css">
+  <title>Aishwarya Jaiswal</title>
+  <meta name="description" content="">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo"><img src="images\AJlogo.png" height="50" width="100" style="float:left" alt="logo"/></a>
+  <div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="#contact">About</a>
+    <a href="#about">Skills</a>
+<a href="#about">Project</a>
+<a class="cta" href="#"><button>Contact</button></a>
+  </div>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="images\web2.jpg" style="width:100%">
+  <div class="text">AI Goes Above and Beyond Our Human Intelligence.</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images\web3.jfif" style="width:100%">
+  <div class="text">The best way to predict the future is to create it.</div>
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images\web4.jfif" style="width:100%">
+  <div class="text">Computer Science is a science of abstraction -creating the right model for a problem and devising the appropriate mechanizable techniques to solve it.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length} ;
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<section id="about">
+<div class="container">
+	<div class="row">
+<br>
+<br>
+<br>
+		 <div class="column1">
+		 	<center><img src="images\myimage.jpeg" 
+		 	class="img2" alt="logo"></center>
+		 </div>
+	<div class="column1">
+<div class="header1">
+		<h2>About me</h2>
+  </div>
+  <div class="text2">
+		<h3>Hiiii! I am Aishwaya Jaiswal. I'm pursuing my bachelor's degree in Computer Science and Engineering. I'm proficient full-stack developer.
+I love building things.While hard engineering problems are often intrinsically fun to tackle. I'm most attracted to solving real world problems using Machine Learning.
+I'm looking for a individual contributor role where I can take  on collaborative team leadership responsibilities and gain experience in respective fields.</h3>
+	</div></div>
+</div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="header1">
+<h2>Skills</h2>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="images\c.png" alt="C" sizes="100px" class="img3">
+  </div>
+   <div class="column">
+    <img src="images\flask.png" alt="flask" sizes="100px" class="img3" >
+  </div>
+   <div class="column">
+    <img src="images\jv.png" alt="javascript" sizes="100px"  class="img3">
+  </div>
+  <div class="column">
+    <img src="images\html5.png" alt="html5" sizes="100px" class="img3">
+  </div>
+  <div class="column">
+    <img src="images\jinja.png" alt="jinja" sizes="100px" class="img3">
+  </div>
+  <div class="column">
+    <img src="images\css.png" alt="css" sizes="100px" class="img3">
+  </div>
+  <div class="column">
+    <img src="images\pythonlogo.jfif" alt="python" sizes="100px"  class="img3">
+  </div>
+  <div class="column">
+    <img src="images\machine-learning-logo.png" alt="MachineLearning" sizes="100px"  class="img3">
+  </div>
+</div>  
+<div class="inner">
+<div class="header1">
+<h1> Project </h1>
+</div>
+<div class="container1">
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/face_recog.jfif" class="skill-icon">
+</div>
+<h2>Face Recogination System</h2>
+</div>
+<p> Face recognition is a method of identifying or verifying the identity of an individual using their face. Face recognition systems can be used to identify people in photos, video, or in real-time. </p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/flight_Fare.jfif" class="skill-icon">
+</div>
+<h2>Flight Fare Prediction</h2>
+</div>
+<p> It is used to predict the dynamic fare of flights. This gives the predicted values of flight fare to get a flight ticket at minimum cost.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/Parallel.jpg" class="skill-icon">
+</div>
+<h2>Parallel</h2>
+</div>
+<p> sdfg fdgh sdfg dsfg sdfg sdfg sdfg sdfgh asdf asdfg asdf asdf asdf sdfg wert wefg sert wer qwertg wertgh wertg qwert qwert sdfg asdfg sdfgb asdfg</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/RollingDice.jfif" class="skill-icon">
+</div>
+<h2>Rolling Dice</h2>
+</div>
+<p> It’s a simple cube with numbers from 1 to 6 written on its face.It is making a computer model. Thus, a dice simulator is a simple computer model that can roll a dice for us.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/Plugin.jpeg" class="skill-icon">
+</div>
+<h2>Go Learn</h2>
+</div>
+<p> It is Web-App which helps student to learn online by teachers and learn more interesting things every week and help teachers to conduct online exams easily, reducing the malpractices by keeping an eye on every student as it provides emotion detection features. Using this, teachers can also check whether the student have understood the topic or not.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/Virtual_Lab.jpeg" class="skill-icon">
+</div>
+<h2>Virtual Lab of Soil Mechanics</h2>
+</div>
+<p> It is Virtual lab of Soil Mechanics which is a computer-based activity where students interact with an experimental apparatus or other activity via a computer interface.</p>
+</div>
+<div class="skill-box">
+<div class="skill-title">
+<div class="img4">
+<img src="images/Limitless_horizon.jpeg" class="skill-icon">
+</div>
+<h2>Limitless Horizon</h2>
+</div>
+<p> It is a Web-App which is a supportive tool for classroom activities. It has multiple in-build features that assist teachers and is a friendly platform for the students. The platform is a combination of 3 tools. 
+<b>1-Drowsiness Detection.
+2-Text Summarizer.
+3-Book Recommendation System.</b></p>
+</div>
+</div>
+</div>
+
+
+
+
+</body>
+</html> 
